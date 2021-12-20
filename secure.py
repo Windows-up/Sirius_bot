@@ -1,11 +1,11 @@
-from config import *
+from config import alfabet, add
+
 
 def toSecure(inp):
     result = ""
 
-
-    for i in range(0,len(inp)):
-        if inp[i] == '\n' :
+    for i in range(0, len(inp)):
+        if inp[i] == '\n':
             result += "`"
         elif inp[i] not in alfabet:
             pass
@@ -16,6 +16,7 @@ def toSecure(inp):
             result += alfabet[index]
 
     return result
+
 
 def deSecure(inp):
     result = ""
